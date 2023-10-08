@@ -51,3 +51,6 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 
 # Run Watchtower container to auto-update other containers
 docker run -d --name watchtower --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
+
+# Remove custom SSH file since it's not needed anymore
+rm sshd_config
