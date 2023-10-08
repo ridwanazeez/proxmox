@@ -13,7 +13,7 @@ curl -O https://raw.githubusercontent.com/ridwanazeez/proxmox/master/setup_alpin
 
 # Edit SSH configuration to allow SSH root login
 ssh_config="/etc/ssh/sshd_config"
-custom_config="/sshd_config"
+custom_config="sshd_config"
 
 # Backup the original sshd_config file
 cp "$ssh_config" "$ssh_config.backup"
