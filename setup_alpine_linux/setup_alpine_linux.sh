@@ -37,11 +37,11 @@ apk add zsh wget git
 # Change default shell to zsh
 sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
-# Reload terminal
-omz reload
-
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Reload terminal
+omz reload
 
 # Create a Docker volume for Portainer data
 docker volume create portainer_data
