@@ -8,6 +8,9 @@ apk add openssh
 rc-update add sshd
 service sshd start
 
+# Download custom ssh_config
+curl -O https://raw.githubusercontent.com/ridwanazeez/proxmox/master/setup_alpine_linux/sshd_config
+
 # Edit SSH configuration to allow SSH root login
 ssh_config="/etc/ssh/sshd_config"
 custom_config="/sshd_config"
